@@ -31,16 +31,12 @@ export async function getServerSideProps(context) {
   const startIndex = isNaN(Number(context.query.start))
     ? '0'
     : Number(context.query.start)
-  console.log(startIndex)
   const data =
     DUMMY_SEARCH === 'true'
       ? Response
       : await fetch(
-          `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${context.query.q}&start=${startIndex}]`
+          `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${context.query.q}&start=${startIndex}`
         ).then((response) => response.json())
-  console.log(
-    `https://www.googleapis.com/customsearch/v1?key=${API_KEY}&cx=${CONTEXT_KEY}&q=${context.query.q}&start=${startIndex}]`
-  )
 
   return {
     props: {
