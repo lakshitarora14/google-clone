@@ -11,17 +11,17 @@ import Response from '../response'
 function Search({ results }) {
   const router = useRouter()
   return (
-    <>
-      <div className='sm:grid flex w-full '>
-        <Head>
-          <title>{router.query.q} - Google Search</title>
-          <link rel='icon' href='/google.png' />
-        </Head>
-        <ResultsHeader />
+    <div className='grid'>
+      <Head>
+        <title>{router.query.q} - Google Search</title>
+        <link rel='icon' href='/google.png' />
+      </Head>
+      <div>
+      <ResultsHeader />
       </div>
       <SearchResults results={results} />
       <Footer />
-    </>
+    </div>
   )
 }
 

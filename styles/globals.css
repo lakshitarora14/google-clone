@@ -1,20 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@layer base {
+  .body {
+    @apply font-lato;
+  }
+}
 
 @layer components {
   .link {
-    @apply hover:underline cursor-pointer
+    @apply hover:underline cursor-pointer;
   }
   .link-m {
-    @apply hover:underline cursor-pointer font-semibold text-gray-500 text-sm
+    @apply hover:underline cursor-pointer font-semibold text-gray-500 text-sm;
   }
   .btn {
     @apply bg-[#f8f8fa] p-3 rounded-md text-gray-800  ring-gray-200 hover:ring-1 
     focus:outline-none active:ring-gray-300 hover:shadow-md h-10
-    flex flex-col justify-center items-center whitespace-nowrap
+    flex flex-col justify-center items-center whitespace-nowrap;
   }
   .link-lang {
-    @apply hover:underline cursor-pointer pb-3
+    @apply hover:underline cursor-pointer pb-3;
   }
 }

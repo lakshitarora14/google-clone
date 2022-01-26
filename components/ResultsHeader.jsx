@@ -17,7 +17,7 @@ function ResultsHeader() {
     router.push(`/search?q=${searchTerm}`)
   }
   return (
-    <header className='stick top-0 bg-white'>
+    <header className='grid stick top-0 bg-white'>
       {/* mobile header */}
       <div className='sm:hidden pb-5'>
         <div className='flex justify-between py-5 px-8 mt-4 w-full flex-grow'>
