@@ -1,3 +1,9 @@
+Environment variables needed:
+API_KEY = xxxxxxxxxxxxx_xxxxxx
+CONTEXT_KEY = xxxxxxxxxxx
+DUMMY_SEARCH = false
+for testing purposes since we only get 100 searches a day, we can enable DUMMY_SEARCH to true and it will serve us a dummy response without contacting API.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
