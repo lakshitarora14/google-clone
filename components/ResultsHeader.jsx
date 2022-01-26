@@ -45,10 +45,10 @@ function ResultsHeader() {
           >
             <SearchIcon className='h-10 text-gray-400 flex pr-3' />
             <input
-              className='h-12 flex-group w-full focus:outline-none lowercase'
+              className='h-12 flex-group w-full focus:outline-none lowercase text-3xl'
               type='text'
               ref={searchInputRef}
-              defaultValue = {router.query.q}
+              defaultValue={router.query.q}
             />
             <MicrophoneIcon className='h-10 text-gray-400' />
             <button type='submit' onClick={search} className='hidden'>
@@ -76,7 +76,7 @@ function ResultsHeader() {
             className='flex-group w-full focus:outline-none lowercase'
             type='text'
             ref={searchInputRef}
-            defaultValue = {router.query.q}
+            defaultValue={router.query.q}
           />
           <XIcon
             className='h-7 sm:mr-3 text-gray-500 cursor-pointer transform
