@@ -1,5 +1,5 @@
-import { XIcon } from '@heroicons/react/solid'
-import { MicrophoneIcon, SearchIcon, MenuIcon } from '@heroicons/react/outline'
+import { XIcon, MicrophoneIcon } from '@heroicons/react/solid'
+import { SearchIcon, MenuIcon } from '@heroicons/react/outline'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { useRef } from 'react'
@@ -18,41 +18,39 @@ function ResultsHeader() {
   }
   return (
     <header className='stick top-0 bg-white'>
-
+      {/* mobile header */}
       <div className='sm:hidden pb-5'>
-
-
-        <div className='flex justify-between p-3 mt-4 w-full flex-grow'>
+        <div className='flex justify-between py-5 px-8 mt-4 w-full flex-grow'>
           <MenuIcon className='h-12 text-gray-500 sm:hidden' />
           <Image
             src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'
             alt='google'
-            height={70}
-            width={200}
+            height={80}
+            width={240}
             className='cursor-pointer'
             onClick={() => router.push('/')}
           />
-          <Avatar
-            url='https://i.postimg.cc/MZdQ43Kr/Whats-App-Image-2019-04-21-at-1-59-51-AM-01.jpg'
-            className='ml-auto'
-          />
+          <div className='transform scale-125'>
+            <Avatar
+              url='https://i.postimg.cc/MZdQ43Kr/Whats-App-Image-2019-04-21-at-1-59-51-AM-01.jpg'
+              className='ml-auto'
+            />
+          </div>
         </div>
-        
-        
-        <div className='flex pb-4'>
+
+        <div className='flex pb-4 justify-center max-w-3xl px-6'>
           <form
-            className='flex px-4 py-2 flex-grow ml-10 mr-5 border border-gray-200
-      rounded-full shadow-lg max-w-2xl items-center'
+            className='flex flex-grow border border-gray-200 h-24 px-6 rounded-full 
+            shadow-lg items-center'
           >
             <SearchIcon className='h-10 text-gray-400 flex pr-3' />
             <input
-              className='h-12 flex-group w-full focus:outline-none'
+              className='h-12 flex-group w-full focus:outline-none lowercase'
               type='text'
               ref={searchInputRef}
+              defaultValue = {router.query.q}
             />
-            <MicrophoneIcon
-              className='h-10 text-gray-400'
-            />
+            <MicrophoneIcon className='h-10 text-gray-400' />
             <button type='submit' onClick={search} className='hidden'>
               Search
             </button>
@@ -60,8 +58,8 @@ function ResultsHeader() {
         </div>
       </div>
 
+      {/* desktop header */}
       <div className='hidden sm:flex w-full p-6 items-center'>
-
         <Image
           src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'
           alt='google'
@@ -75,9 +73,10 @@ function ResultsHeader() {
       rounded-full shadow-lg max-w-2xl items-center'
         >
           <input
-            className='flex-group w-full focus:outline-none'
+            className='flex-group w-full focus:outline-none lowercase'
             type='text'
             ref={searchInputRef}
+            defaultValue = {router.query.q}
           />
           <XIcon
             className='h-7 sm:mr-3 text-gray-500 cursor-pointer transform
@@ -100,7 +99,7 @@ function ResultsHeader() {
           />
         </div>
       </div>
-      
+
       <ResultHeaderOptions />
     </header>
   )
