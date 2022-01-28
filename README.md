@@ -3,10 +3,16 @@ A responsive google clone made using react.js, next.js, tailwind and google cust
 
 Live Project : https://google-lime-six.vercel.app/
 
-Screenshots
+####Screenshots
+
 Google.com              |  Google Clone
 :-------------------------:|:-------------------------:
-![image](https://user-images.githubusercontent.com/44324506/151517014-84e55825-0af3-4d74-b6df-e2eb1af3e3a9.png) |  ![image](https://user-images.githubusercontent.com/44324506/151517309-f52603f0-2c8f-4fc2-99f3-7871424adec6.png)
+![image](https://user-images.githubusercontent.com/44324506/151520086-4bd108ce-4114-4c0f-8659-42d0b3d29d3a.png)  |  ![image](https://user-images.githubusercontent.com/44324506/151519984-1072d3a0-088e-4714-8035-f00100ec02ec.png)
+![image](https://user-images.githubusercontent.com/44324506/151520896-eb0dfcf1-393b-4159-b1b8-bf9faef19cd7.png)  |  ![image](https://user-images.githubusercontent.com/44324506/151520055-271238f5-b108-44bb-9377-d37748fee36a.png)
+![image](https://user-images.githubusercontent.com/44324506/151520998-4bd35023-d1c1-4a35-846d-e77a3d0f85db.png)  |  ![image](https://user-images.githubusercontent.com/44324506/151521016-5f98489a-9e90-42fa-ab35-2b45724f9dcf.png)
+![image](https://user-images.githubusercontent.com/44324506/151521167-98019713-4e15-43ec-bb51-3f1edb7792d4.png)  |  ![image](https://user-images.githubusercontent.com/44324506/151521124-0b0cd316-9203-48bf-a6dc-182095231682.png)
+![image](https://user-images.githubusercontent.com/44324506/151521520-a2eb1324-67bf-477f-8b1d-544e8d7adb14.png)  |  ![image](https://user-images.githubusercontent.com/44324506/151521260-bbb71da0-e7af-4f15-88a5-0ffc52816563.png)
+
 
 
 ```
