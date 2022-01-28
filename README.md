@@ -1,8 +1,21 @@
+##Google Clone
+A responsive google clone made using react.js, next.js, tailwind and google custom search JSON API
+
+Live Project : https://google-lime-six.vercel.app/
+
+Screenshots
+Google.com              |  Google Clone
+:-------------------------:|:-------------------------:
+![image](https://user-images.githubusercontent.com/44324506/151517014-84e55825-0af3-4d74-b6df-e2eb1af3e3a9.png) |  ![image](https://user-images.githubusercontent.com/44324506/151517309-f52603f0-2c8f-4fc2-99f3-7871424adec6.png)
+
+
+```
 Environment variables needed:
 API_KEY = xxxxxxxxxxxxx_xxxxxx
 CONTEXT_KEY = xxxxxxxxxxx
 DUMMY_SEARCH = false
 for testing purposes since we only get 100 searches a day, we can enable DUMMY_SEARCH to true and it will serve us a dummy response without contacting API.
+```
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
